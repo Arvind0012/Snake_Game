@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background: linear-gradient(rgb(60, 59, 59), rgb(222, 53, 53) ,rgb(126, 189, 126) );
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#board{
+    background-color: rgb(19 18 18); 
+    height: 25rem;
+    width: 25rem;
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: repeat(20,1fr);
+    grid-template-columns: repeat(20,1fr);
+}
+/* for snake head  */
+.head{
+    background: linear-gradient(rgb(220, 220, 39) ,rgb(134, 215, 215),rgb(202, 108, 191));
+    border-radius: 3px;
+    margin: 1.5px;
+}
+/* for addition of snake div or tail */
+.snake{
+    background: linear-gradient(rgb(220, 220, 45), rgb(203, 52, 52),  rgb(23, 0, 128));
+    margin: 1.5px;
+    border-radius: 5px;
+}
+/* for snake food */
+.food{
+    background: linear-gradient(rgb(225, 225, 16),rgb(64, 199, 64));
+    border-radius: 8px;
+}
+#scoreBox{
+    /* background-color: rgb(165, 220, 201); */
+    margin-left: 10px;
+    min-width: 170px;
+    height: 35px;
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 3px;
+    font-weight: 700;
+    color: rgb(29, 216, 51);
+}
